@@ -1,0 +1,22 @@
+body {
+  background-color: #2c2c2d;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+}
+
+.galery {
+  display: flex; /*Alinha os elementos na horizontal (habilita a barra de rolagem)*/
+  flex-wrap: wrap; /*Joga os elementos para baixo para nao estourar o container*/
+  gap: 0.125rem; /*Feito para dar um espacamento entre os elementos */
+}
+
+.galery > img {
+  /* aspect-ratio: 1 / 1;  ele forca uma proporcao 1 para 1 */
+  flex-grow: 1; /*Faz as imagens crescerem na mesma proporcao, crescendo no mesmo tamanho */
+  flex-shrink: 1; /* Encolhimento das imagens */
+  flex-basis: 12rem; /* */
+  height: 12rem; /* garantir a imagem quadrada*/
+  width: 12rem; /* garantir a imagem quadrada*/
+  object-fit: cover; /*para as imagens nao ficarem distorcidas e se adaptarem */
+}
