@@ -16,7 +16,7 @@ body {
 }
 
 .box.yellow {
-  /* flex: 0 1; */
+  flex: 0 1;
 }
 
 /* Estilos auxiliares */
